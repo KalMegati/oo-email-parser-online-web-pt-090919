@@ -6,6 +6,9 @@
 
 class EmailAddressParser
   
+  def initialize(addresses)
+  end
+  
   def parse(addresses)
     addresses.split(/,|\s/)
   end
