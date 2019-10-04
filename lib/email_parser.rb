@@ -6,9 +6,9 @@
 
 class EmailAddressParser
   
-  def initialize(addresses)
-    @addresses = addresses
-  end
+  attr_accessor :addresses
+  
+
   
   def parse
     @addresses.split(/,?\s/).uniq
