@@ -7,10 +7,11 @@
 class EmailAddressParser
   
   def initialize(addresses)
+    @addresses = addresses
   end
   
-  def parse(addresses)
-    addresses.split(/,|\s/)
+  def parse
+    @addresses.split(/,|\s/)
   end
   
 end
